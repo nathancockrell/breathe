@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.timer {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn {
+  flex: 1 1 45%;
+  padding: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sessions {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.sessions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sessions li {
+  background: #f2f2f2;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
