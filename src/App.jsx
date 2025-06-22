@@ -144,12 +144,17 @@ export default function App() {
           Last action: <strong>{lastAction}</strong> — {formatMsElapsed(msSinceAction)} sec ago
         </div>
       )}
+      {!lastAction && (
+        <div className="status">
+          press an action to start
+        </div>
+      )}
 
       <div className="buttons">
+        <button className="btn" onClick={stopAndReset}>stop</button>
         <button className="btn" onClick={() => handleAction("In")}>In</button>
-        <button className="btn" onClick={() => handleAction("Out")}>Out</button>
         <button className="btn" onClick={() => handleAction("Hold")}>Hold</button>
-        <button className="btn" onClick={stopAndReset}>Off</button>
+        <button className="btn" onClick={() => handleAction("Out")}>Out</button>
       </div>
 
       <div className="sessions">
